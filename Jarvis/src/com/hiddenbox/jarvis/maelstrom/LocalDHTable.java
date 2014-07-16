@@ -1,5 +1,4 @@
-
-package com.maelstrom;
+package com.hiddenbox.jarvis.maelstrom;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -35,4 +34,5 @@ public class LocalDHTable {
         database.execSQL("DROP TABLE IF EXISTS " + TABLE_MAELSTROM);
         onCreate(database);
     }
+
 }

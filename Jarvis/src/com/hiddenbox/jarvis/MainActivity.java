@@ -2,6 +2,8 @@ package com.hiddenbox.jarvis;
 
 import java.util.Locale;
 
+import com.hiddenbox.jarvis.maelstrom.MaelstromFragment;
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -116,7 +118,11 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a JarvisFragment (defined as a static inner class below).
-            return JarvisFragment.newInstance(position + 1);
+            if(position==1) {
+                return MaelstromFragment.newInstance(2);
+            } else {
+                return JarvisFragment.newInstance(position + 1);
+            }
         }
 
         @Override
