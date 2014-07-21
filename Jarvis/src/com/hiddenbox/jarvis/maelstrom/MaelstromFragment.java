@@ -67,10 +67,10 @@ public class MaelstromFragment extends Fragment {
         };
         
         dataAdapter = new MaelStromLVAdapter(getActivity(), R.layout.rowlayout, resultCursor, columns, to);
-        ListView listView = (ListView) getActivity().findViewById(R.id.listView1);
+        ListView listView = (ListView) (getActivity().findViewById(R.id.listView1));
         // Assign adapter to ListView
-        listView.setAdapter(dataAdapter);
-        registerForContextMenu(listView);
+//        listView.setAdapter(dataAdapter);
+//        registerForContextMenu(listView);
 
         getActivity().findViewById(R.id.add).setOnClickListener(new OnClickListener() {
 

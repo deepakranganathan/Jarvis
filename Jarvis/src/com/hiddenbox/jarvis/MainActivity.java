@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
     /**
      * The {@link ViewPager} that will host the section contents.
-     */
+     */ 
     ViewPager mViewPager;
 
     @Override
@@ -118,11 +118,11 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a JarvisFragment (defined as a static inner class below).
-            if(position==1) {
-                return MaelstromFragment.newInstance(2);
-            } else {
+//            if(position==1) {
+//                return MaelstromFragment.newInstance(2);
+//            } else {
                 return JarvisFragment.newInstance(position + 1);
-            }
+//            }
         }
 
         @Override

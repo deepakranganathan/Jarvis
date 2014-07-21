@@ -3,6 +3,7 @@
 
     <string name="app_name">Jarvis</string>
     <string name="title_section_jmon">Jarvis Monitor</string>
+    <string name="action_jmon">Jarvis Monitor</string>
     <string name="title_section_maelstrom">People</string>
     <string name="title_section3">Section 3</string>
     <string name="action_settings">Settings</string>
